@@ -6,8 +6,12 @@ object MatchTest
         case 1 =>"scala"
         case 2 =>"java"
         case 3 =>"js"
-        case _ =>"other"
+        case _ =>throw new IllegalArgumentException("Nothing")
+
+
     }
+
+
 
     def main(args: Array[String]): Unit =
     {

@@ -16,17 +16,19 @@ class Point(px: Int, py: Int)
 
 object Point
 {
-    def main(args: Array[String]): Unit =
-    {
-        var point = new Point(10, 20)
+//    def main(args: Array[String]): Unit =
+////    {
+////        var point = new Point(3, 8)
+////
+////        def printPoint: Unit =
+////        {
+////            println("x=" + point.x)
+////            println("y=" + point.y)
+////        }
+////
+////    }
 
-        def printPoint: Unit =
-        {
-            println("x=" + point.x)
-            println("y=" + point.y)
-        }
-
-    }
+    def apply(px: Int, py: Int): Point = new Point(px, py)
 
 
 }

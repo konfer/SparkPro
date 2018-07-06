@@ -148,9 +148,16 @@ object HelloWorld
         }
 
 
-        println("---------class----------")
+        println("---------keliFunc----------")
+
+        val x=multiplayBy(5)
+        val z=x(5)
+        println(z)
+
 
     }
+
+    def multiplayBy(factor:Double)=(x:Double)=>factor*x
 
 
 }
